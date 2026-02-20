@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Mirrored from aztec-quiz.vercel.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Aug 2025 10:40:04 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Raiku Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Background + Logo -->
+    <div class="background-overlay">
+      <video id="6e64fbb9-1f03-7613-785e-edd0bd815f69-video" autoplay="" loop="" style="background-image:url(&quot;https://cdn.prod.website-files.com/689096a8b6a5de14a46b4082%2F68cc155c7ffce52a99d8c1aa_Raiku%20Hero-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source data-wf-ignore="true" src="https://cdn.prod.website-files.com/689096a8b6a5de14a46b4082%2F68cc155c7ffce52a99d8c1aa_Raiku%20Hero-transcode.mp4"><source data-wf-ignore="true" src="https://cdn.prod.website-files.com/689096a8b6a5de14a46b4082%2F68cc155c7ffce52a99d8c1aa_Raiku%20Hero-transcode.webm"></video>
+    </div>
+
+    <div class="quiz-wrapper fade-in">
+      <!-- Start Screen -->
+      <div id="start-screen" class="quiz-box">
+        <h1>🐉 Raiku Quiz</h1>
+        <p>Sure you've done your research on Raiku? click 'Start' let's find out</p>
+        <button id="start-btn">Start</button>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quiz-screen" class="quiz-box hidden">
+        <div class="progress-bar"><div id="progress-fill"></div></div>
+        <div id="question-box"></div>
+        <ul id="answer-buttons"></ul>
+        <button id="next-btn" class="hidden">Next</button>
+      </div>
+
+      <div id="result-screen" class="quiz-box hidden">
+        <h2>Your Score: <span id="final-score"></span>%</h2>
+        <img id="result-image" class="certificate" src="#" alt="Certificate" />
+
+        <div class="certificate-actions">
+          <button id="download-btn">Download Certificate</button>
+          <a id="twitter-share" target="_blank">Share on Twitter</a>
+        </div>
+
+        <div class="result-actions">
+          <button id="retry-btn">Try Again</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+
+  <!-- Mirrored from aztec-quiz.vercel.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Aug 2025 10:40:06 GMT -->
+</html>
