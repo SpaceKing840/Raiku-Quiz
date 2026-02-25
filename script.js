@@ -271,8 +271,10 @@ function showResult() {
   resultImage.src = highScore ? "assets/good-job.png" : "assets/try-again.png";
 
   // Twitter share
+  const currentUrl = window.location.href;
   const tweetText = `I scored ${percentage}% in the Raiku Quiz
-Can you beat that? @raikucom`;
+Can you beat that? @raikucom
+${currentUrl}`;
   twitterShare.href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
     tweetText
   )}`;
